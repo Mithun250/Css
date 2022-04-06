@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+  div{
+      margin: 20px;
+  }
+    .intro{
+     
+        position: relative; 
+        width: 300px;
+        height: 300px;
+        border: 2px solid violet
+
+    }
+    div.intro1{
+        position: absolute;
+        top: 80px;
+        left: 40px;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+
+    }
+    .sticky{ 
+        
+        position:sticky;  
+        background-color: #73AD21;
+        border: 2px solid green;
+        color: white;
+        padding: 30px;
+        top: 0;
+       
+    }
+    .fixed{
+        position: fixed;
+        background-color: #73AD21;
+        border: 2px solid green;
+        padding: 20px;
+        left: 20px;
+
+    }
+  
+</style>
+<body>
+    <!-- relative -->
+    <div class="intro">The using of positions we can arrange the documents</div>
+
+    <!-- absolute -->
+    <div class="intro1">The asolute is like an poster and relative is like an wall</div>
+
+    <!-- sticky -->
+    <div class="sticky">This div has sticky</div>
+        <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>    
+    </div>
+
+    <!-- fixed -->
+    <div class="fixed">
+        This div element has position: fixed;
+        </div>
+        <div style="padding-bottom: 2000px;">
+        </div>
+    
+
+</body>
+</html>
